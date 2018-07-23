@@ -11,7 +11,7 @@ public class SeleniumDriver {
     private static ThreadLocal<WebDriver> driverThread = new ThreadLocal<WebDriver>();
 
     public static void initDriver() {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/src/test/resources/drive/chromedriver");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/src/test/resources/driver/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
         options.addArguments("start-fullscreen");
